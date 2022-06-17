@@ -33,3 +33,8 @@ jobs:
         with:
           name: remark-lint-report
           path: public/
+      - name: Success github action
+        uses: Sibz/github-status-action@v1.1.6
+        with:
+          authToken: ${{secrets.GITHUB_TOKEN}}
+          state: 'success'
